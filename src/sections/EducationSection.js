@@ -3,15 +3,24 @@ import styled from "styled-components";
 import ResumeSection from "../components/ResumeSection";
 import ResumeSectionTitle from "../components/ResumeSectionTitle";
 
+const Institution = styled.div`
+    font-size: 14px;
+`;
+
+const Dates = styled.div`
+    font-size: 10px;
+    color: #666;
+`;
+
 const EducationSection = ({ education }) => (
     <ResumeSection
         left={<ResumeSectionTitle>Education</ResumeSectionTitle>}
         right={
             <div>
-                <div>{education[0].institution}</div>
-                <div>
+                <Institution>{education[0].institution}</Institution>
+                <Dates>
                     {education[0].startDate} - {education[0].endDate}
-                </div>
+                </Dates>
             </div>
         }
     />

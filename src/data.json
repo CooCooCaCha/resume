@@ -39,9 +39,16 @@
             "company": "TSYS",
             "position": "Senior Software Engineer",
             "startDate": "2017",
-            "endDate": "2018",
-            "summary": "",
-            "highlights": [""]
+            "endDate": "Present",
+            "summary": "ReactJS and front-end specialist.",
+            "highlights": [
+                "Became responsible for upgrading the dependencies for all of our projects.",
+                "Gave presentations and introduced new React techniques like Fragments and Render-Props.",
+                "Completely rebuilt the UI my product.",
+                "Built a dynamically generated page flow system. Pages were generated from data returned from a REST API.",
+                "Regularly contributed to our core React frameworks.",
+                "Mentored and trained junior developers on React."
+            ]
         },
         {
             "company": "Koble",
