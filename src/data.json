@@ -1,0 +1,173 @@
+{
+    "basics": {
+        "name": "William R. Johnson",
+        "title": "Software Engineer",
+        "email": "wrjstuff@gmail.com",
+        "phone": "(404) 403-3463",
+        "summary":
+            "Seeking a front-end or full-stack web development position.",
+        "location": {
+            "address": "789 Hammond Dr. NE, Apt. 1205",
+            "city": "Atlanta",
+            "postalCode": "GA 30328",
+            "countryCode": "US",
+            "region": "Georgia"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "CooCooCaCha",
+                "url": "https://github.com/CooCooCaCha"
+            },
+            {
+                "network": "Medium",
+                "username": "bill_24885",
+                "url": "https://medium.com/@bill_24885"
+            },
+            {
+                "network": "Twitter",
+                "username": "CooCooCaCha",
+                "url": "https://twitter.com/CooCooCaCha"
+            },
+            {
+                "network": "Soundcloud",
+                "username": "freshmanbill",
+                "url": "https://soundcloud.com/freshmanbill"
+            }
+        ]
+    },
+
+    "work": [
+        {
+            "company": "TSYS",
+            "position": "Senior Software Engineer",
+            "startDate": "2017",
+            "endDate": "2018",
+            "summary": "",
+            "highlights": [""]
+        },
+        {
+            "company": "Koble",
+            "position": "Co-Founder / Lead Engineer",
+            "startDate": "2016",
+            "endDate": "2017",
+            "summary":
+                "Design and manage infrastructure on Google Cloud and Firebase. Made all of the software architecture decisions. Wrote all of the code. Responded to outages and server issues.",
+            "highlights": [
+                "Developed a prototype app using React-Native.",
+                "Developed a website using React.",
+                "Setup and maintaned infrastructure using Google Cloud",
+                "Built a service to automatically retrieve and update LetsEncrypt certificates for TLS/SSL encryption.",
+                "Wrote an audit-log service that lisented for changes in Firebase and inserted a change summary into Google BigQuery.",
+                "Setup Jenkins for continuous integration with Github.",
+                "Deployed a Kubernetes cluster using Google Container Engine."
+            ]
+        },
+        {
+            "company": "Salesloft",
+            "position": "Full-Stack Software Engineer",
+            "website": "https://salesloft.com/",
+            "startDate": "2015",
+            "endDate": "2016",
+            "summary":
+                "Designed, developed, and deployed features for the Salesloft SAAS application. Touched upon everything from database design and migrations to front-end UX design and development.",
+            "highlights": [
+                "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously and on the same server cluster."
+            ]
+        },
+        {
+            "company": "Nead Werx",
+            "position": "Software Architect",
+            "website": "http://www.neadwerx.com/",
+            "startDate": "2013",
+            "endDate": "2015",
+            "summary":
+                "In charge of researching and developing core software frameworks and coding standards as well as interviewing and training new engineers.",
+            "highlights": [
+                "Developed an interactive visualization tool for retail stores using HTML5, CSS3, and Javascript. Think Google Maps but for retail stores.",
+                "Designed and developed a custom REST API framework in PHP.",
+                "Developed a graph-based API query system (before GraphQL existed)."
+            ]
+        },
+        {
+            "company": "Cox Communications",
+            "position": "Co-op Software Engineer",
+            "website": "https://www.cox.com",
+            "startDate": "2009",
+            "endDate": "2011",
+            "summary":
+                "Developed tools and prototypes for the Core Applications Team.",
+            "highlights": [
+                "Implemented a rectangle-packing algorithm in Java with the purpose of combining multiple images into a single, large image. The overhead for each HTTP request was significant so using a single image reduced load time.",
+                "Wrote a prototype TV guide application featuring a lazy-loading system. Data was loaded as-needed and significantly reduced infrastructure requirements."
+            ]
+        }
+    ],
+
+    "volunteer": [],
+
+    "education": [
+        {
+            "institution": "Georgia Institute of Technology",
+            "area": "Computer Science",
+            "studyType": "Bachelor",
+            "startDate": "2007",
+            "endDate": "2012"
+        }
+    ],
+
+    "publications": [
+        {
+            "name": "My quest to learn machine learning",
+            "publisher": "Medium",
+            "releaseDate": "2017-02-11",
+            "website":
+                "https://medium.com/@bill_24885/my-quest-to-learn-machine-learning-6aeae1d3ae17",
+            "summary":
+                "A quick overview of some recent milestones in my quest to learn machine learning."
+        }
+    ],
+
+    "skills": [
+        { "name": "Javascript" },
+        { "name": "HTML5" },
+        { "name": "CSS3" },
+        { "name": "React" },
+        { "name": "React-Native" },
+        { "name": "Redux" },
+        { "name": "Observables" },
+        { "name": "React-Router" },
+        { "name": "React-Navigation" },
+        { "name": "SQL" },
+        { "name": "Git" },
+        { "name": "Python" },
+        { "name": "Flask" },
+        { "name": "Tensorflow" },
+        { "name": "Keras" },
+        { "name": "PyTorch" },
+        { "name": "Functional Programming" }
+    ],
+
+    "interests": [
+        {
+            "name": "Running",
+            "keywords": ["Cross-Country", "Track & Field"]
+        },
+        {
+            "name": "Creating Electronic Music",
+            "keywords": ["House Music", "Drum & Bass", "Dubstep"]
+        },
+        {
+            "name": "Game Development",
+            "keywords": ["Unity", "Unreal Engine", "Game Theory", "Game Design"]
+        },
+        {
+            "name": "Stock Market and Cryptocurrency",
+            "keywords": ["Bitcoin", "Ethereum", "Algorithmic Trading"]
+        },
+        {
+            "name": "Machine Learning",
+            "keywords": ["Tensorflow", "Keras", "XGBoost", "Scikit-Learn"]
+        }
+    ]
+}
