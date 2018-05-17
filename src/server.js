@@ -1,5 +1,5 @@
 const serve = require("webpack-serve");
-const config = require("./webpack.config.js");
+const config = require("../webpack.config.js");
 
 const path = require("path");
 const puppeteer = require("puppeteer");
@@ -10,7 +10,7 @@ const renderPdf = async () => {
 
     const url = `http://localhost:8080`;
     const gotoOptions = { waitUntil: "networkidle2" };
-    const pdfOptions = { path: "./build/resume.pdf", format: "A4" };
+    const pdfOptions = { path: "../build/resume.pdf", format: "A4" };
 
     await page.goto(url, gotoOptions);
     await page.pdf(pdfOptions);
