@@ -1,24 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import data from "../data.json";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import faBriefcase from "@fortawesome/fontawesome-free-solid/faBriefcase";
 
 import ResumeHeader from "./ResumeHeader";
 import ResumeRowLeft from "./ResumeRowLeft";
 import ResumeRowRight from "./ResumeRowRight";
 import WorkRow from "./WorkRow";
 
+import data from "../data.json";
+
 const ResumeContainer = styled.div`
     padding: 20px;
     display: grid;
 
     grid-auto-rows: min-content;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 150px 1fr;
     grid-gap: 20px 0px;
 `;
 
 const ResumeRowLeftBig = ResumeRowLeft.extend`
     font-size: 20px;
-    color: #666;
+    color: #cc6464;
+    font-weight: 600;
+    text-transform: uppercase;
 `;
 
 const ContactRowRight = ResumeRowRight.extend`
@@ -42,26 +47,9 @@ const Skills = ResumeRowRight.extend`
 
 const Resume = () => (
     <ResumeContainer>
-        <ResumeHeader name={data.basics.name} title={data.basics.title} />
+        <ResumeHeader {...data.basics} />
 
-        <ResumeRowLeftBig>Contact</ResumeRowLeftBig>
-        <ContactRowRight>
-            <ContactItem>
-                <div>Email</div>
-                <div>{data.basics.email}</div>
-            </ContactItem>
-
-            <ContactItem>
-                <div>Phone</div>
-                <div>{data.basics.phone}</div>
-            </ContactItem>
-            <ContactItem>
-                <div>Location</div>
-                <div>Atlanta, GA</div>
-            </ContactItem>
-        </ContactRowRight>
-
-        <ResumeRowLeftBig>Work Experience</ResumeRowLeftBig>
+        <ResumeRowLeftBig>Experience</ResumeRowLeftBig>
         <ResumeRowRight />
 
         {data.work
@@ -77,12 +65,14 @@ const Resume = () => (
         </ResumeRowRight>
 
         <ResumeRowLeftBig>Skills</ResumeRowLeftBig>
-        <Skills>{data.skills.map(skill => <div>{skill.name}</div>)}</Skills>
+        <Skills>
+            {data.skills.map((skill, i) => <div key={i}>{skill.name}</div>)}
+        </Skills>
 
         <ResumeRowLeftBig>Interests</ResumeRowLeftBig>
         <ResumeRowRight>
-            {data.interests.map(interest => (
-                <div>
+            {data.interests.map((interest, i) => (
+                <div key={i}>
                     {interest.name}
                     {interest.keywords.join(", ")}
                 </div>

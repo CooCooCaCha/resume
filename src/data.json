@@ -7,11 +7,8 @@
         "summary":
             "Seeking a front-end or full-stack web development position.",
         "location": {
-            "address": "789 Hammond Dr. NE, Apt. 1205",
             "city": "Atlanta",
-            "postalCode": "GA 30328",
-            "countryCode": "US",
-            "region": "Georgia"
+            "state": "GA"
         },
         "profiles": [
             {
