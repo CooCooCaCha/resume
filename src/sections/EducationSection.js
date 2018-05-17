@@ -5,6 +5,7 @@ import ResumeSectionTitle from "../components/ResumeSectionTitle";
 
 const Institution = styled.div`
     font-size: 14px;
+    font-weight: 600;
 `;
 
 const Dates = styled.div`

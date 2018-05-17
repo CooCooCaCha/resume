@@ -18,6 +18,7 @@ const ResumeBody = styled.div`
     grid-auto-rows: min-content;
     grid-template-columns: 150px 1fr;
     grid-gap: 20px 0px;
+    color: #444;
 `;
 
 const Resume = () => (

@@ -9,7 +9,7 @@ const ResumeSectionRight = styled.div`
     grid-column: 2;
 `;
 
-const ResumeSection = ({ left, right }) => (
+const ResumeSection = ({ className, left, right }) => (
     <React.Fragment>
         <ResumeSectionLeft>{left}</ResumeSectionLeft>
         <ResumeSectionRight>{right}</ResumeSectionRight>

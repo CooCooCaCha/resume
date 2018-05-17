@@ -5,7 +5,7 @@ import ResumeSectionTitle from "../components/ResumeSectionTitle";
 
 const Skills = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 12px;
 `;
 

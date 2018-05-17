@@ -12,6 +12,7 @@ const Label = styled.div`
 
 const Company = styled.div`
     font-size: 14px;
+    font-weight: 600;
 `;
 
 const Dates = styled.div`
@@ -21,6 +22,7 @@ const Dates = styled.div`
 
 const Position = styled.div`
     font-size: 14px;
+    font-weight: 600;
 `;
 
 const Summary = styled.div`
