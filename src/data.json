@@ -43,8 +43,8 @@
             "summary": "ReactJS and front-end specialist.",
             "highlights": [
                 "Became responsible for upgrading the dependencies for all of our projects.",
-                "Gave presentations and introduced new React techniques like Fragments and Render-Props.",
-                "Completely rebuilt the UI my product.",
+                "Gave presentations and introduced new React techniques such as Fragments and Render-Props.",
+                "Completely rebuilt the UI for my product.",
                 "Built a dynamically generated page flow system. Pages were generated from data returned from a REST API.",
                 "Regularly contributed to our core React frameworks.",
                 "Mentored and trained junior developers on React."
@@ -60,7 +60,7 @@
             "highlights": [
                 "Developed a prototype app using React-Native.",
                 "Developed a website using React.",
-                "Setup and maintaned infrastructure using Google Cloud",
+                "Setup and maintained infrastructure using Google Cloud",
                 "Built a service to automatically retrieve and update LetsEncrypt certificates for TLS/SSL encryption.",
                 "Wrote an audit-log service that lisented for changes in Firebase and inserted a change summary into Google BigQuery.",
                 "Setup Jenkins for continuous integration with Github.",

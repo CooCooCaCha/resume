@@ -5,6 +5,8 @@ import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import faEnvelope from "@fortawesome/fontawesome-free-solid/faEnvelope";
 import faPhone from "@fortawesome/fontawesome-free-solid/faPhone";
 import faMapMarkerAlt from "@fortawesome/fontawesome-free-solid/faMapMarkerAlt";
+import faGithub from "@fortawesome/fontawesome-free-brands/faGithub";
+import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 import Photo from "../images/photo.jpg";
 
 const ResumeHeaderContainer = styled.div`
@@ -98,6 +100,11 @@ const ResumeHeader = ({ name, title, email, phone, location }) => (
                 <Contact>
                     <FontAwesomeIcon icon={faMapMarkerAlt} />
                     {location.city}, {location.state}
+                </Contact>
+
+                <Contact>
+                    <FontAwesomeIcon icon={faGithub} />
+                    CooCooCaCha
                 </Contact>
             </ResumeHeaderRightInner>
         </ResumeHeaderRight>
