@@ -26,7 +26,7 @@ const Keywords = styled.div`
 
 const InterestsSection = ({ interests }) => (
     <ResumeSection
-        left={<ResumeSectionTitle>Interests</ResumeSectionTitle>}
+        left={<ResumeSectionTitle>Other Interests</ResumeSectionTitle>}
         right={
             <Container>
                 {interests.map((interest, i) => (

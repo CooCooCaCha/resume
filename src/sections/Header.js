@@ -14,7 +14,7 @@ const ResumeHeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     background: #cc6464;
     color: #fff;
 `;
@@ -65,6 +65,8 @@ const ResumeHeaderRightInner = styled.div`
 `;
 
 const Contact = styled.div`
+    display: flex;
+    flex-direction: row;
     font-weight: 200;
 
     svg {
@@ -72,6 +74,10 @@ const Contact = styled.div`
         margin-right: 10px;
         color: #fff;
     }
+`;
+
+const ContactIcon = styled.div`
+    width: 20px;
 `;
 
 const ResumeHeader = ({ name, title, email, phone, location }) => (
@@ -88,22 +94,30 @@ const ResumeHeader = ({ name, title, email, phone, location }) => (
         <ResumeHeaderRight>
             <ResumeHeaderRightInner>
                 <Contact>
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <ContactIcon>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                    </ContactIcon>
                     {email}
                 </Contact>
 
                 <Contact>
-                    <FontAwesomeIcon icon={faPhone} />
+                    <ContactIcon>
+                        <FontAwesomeIcon icon={faPhone} />
+                    </ContactIcon>
                     {phone}
                 </Contact>
 
                 <Contact>
-                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                    <ContactIcon>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} />
+                    </ContactIcon>
                     {location.city}, {location.state}
                 </Contact>
 
                 <Contact>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <ContactIcon>
+                        <FontAwesomeIcon icon={faGithub} />
+                    </ContactIcon>
                     CooCooCaCha
                 </Contact>
             </ResumeHeaderRightInner>

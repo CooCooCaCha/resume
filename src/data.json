@@ -36,10 +36,23 @@
 
     "work": [
         {
+            "company": "World 50",
+            "position": "Senior Software Engineer",
+            "startDate": "2018",
+            "endDate": "Present",
+            "summary":
+                "Full-Stack javascript developer on a small team dedicated to rebuilding the company's infrastructure.",
+            "highlights": [
+                "Rebuilt a legacy application on a modern tech stack. The application runs on web, iOS, and Android with the majority of the code shared between all 3 platforms.",
+                "Helped interview all subsequent developers and bring them up to speed with our tech stack. This included mentoring and pair programming.",
+                "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, networking, and build pipelines."
+            ]
+        },
+        {
             "company": "TSYS",
             "position": "Senior Software Engineer",
             "startDate": "2017",
-            "endDate": "Present",
+            "endDate": "2018",
             "summary": "ReactJS and front-end specialist.",
             "highlights": [
                 "Became responsible for upgrading the dependencies for all of our projects.",
@@ -76,7 +89,8 @@
             "summary":
                 "Designed, developed, and deployed features for the Salesloft SAAS application. Touched upon everything from database design and migrations to front-end UX design and development.",
             "highlights": [
-                "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously and on the same server cluster."
+                "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously and on the same server cluster.",
+                "Learned Ruby, Ruby on Rails, and Angular on the job."
             ]
         },
         {
@@ -134,22 +148,20 @@
 
     "skills": [
         { "name": "Javascript" },
-        { "name": "HTML5" },
-        { "name": "CSS3" },
+        { "name": "Typecript" },
         { "name": "React" },
-        { "name": "React-Native" },
-        { "name": "Redux" },
-        { "name": "Observables" },
-        { "name": "React-Router" },
-        { "name": "React-Navigation" },
+        { "name": "GraphQL" },
+        { "name": "NodeJS" },
         { "name": "SQL" },
         { "name": "Git" },
+        { "name": "AWS" },
+        { "name": "Google Cloud" },
+        { "name": "HTML" },
+        { "name": "CSS" },
+        { "name": "Functional Programming" },
+        { "name": "Redux" },
         { "name": "Python" },
-        { "name": "Flask" },
-        { "name": "Tensorflow" },
-        { "name": "Keras" },
-        { "name": "PyTorch" },
-        { "name": "Functional Programming" }
+        { "name": "Ruby" }
     ],
 
     "interests": [
@@ -158,12 +170,8 @@
             "keywords": ["Cross-Country", "Track & Field"]
         },
         {
-            "name": "Creating Electronic Music",
+            "name": "Producing Electronic Music",
             "keywords": ["House Music", "Drum & Bass", "Dubstep"]
-        },
-        {
-            "name": "Game Development",
-            "keywords": ["Unity", "Unreal Engine", "Game Theory", "Game Design"]
         },
         {
             "name": "Stock Market and Cryptocurrency",

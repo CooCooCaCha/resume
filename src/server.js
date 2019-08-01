@@ -12,7 +12,7 @@ const renderPdf = async () => {
     const pdfPath = path.join(__dirname, "../build/resume.pdf");
 
     const gotoOptions = { waitUntil: "networkidle2" };
-    const pdfOptions = { path: pdfPath, format: "A4" };
+    const pdfOptions = { path: pdfPath, format: "letter" };
 
     await page.goto(url, gotoOptions);
     await page.pdf(pdfOptions);

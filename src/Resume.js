@@ -12,12 +12,12 @@ import InterestsSection from "./sections/InterestsSection";
 import data from "./data.json";
 
 const ResumeBody = styled.div`
-    padding: 20px;
+    padding: 16px;
     display: grid;
 
     grid-auto-rows: min-content;
     grid-template-columns: 150px 1fr;
-    grid-gap: 20px 0px;
+    grid-gap: 16px 0px;
     color: #444;
 `;
 
