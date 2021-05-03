@@ -38,7 +38,8 @@
       "highlights": [
         "Rebuilt a legacy application on a modern tech stack. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
         "Helped interview all subsequent developers and bring them up to speed with our tech stack. This included mentoring and pair programming.",
-        "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines."
+        "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
+        "Built an GraphQL API as the backbone of our application. Solved N+1 query problems by using the Facebook Dataloader library."
       ]
     },
     {
