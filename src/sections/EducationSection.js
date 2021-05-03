@@ -4,27 +4,27 @@ import ResumeSection from "../components/ResumeSection";
 import ResumeSectionTitle from "../components/ResumeSectionTitle";
 
 const Institution = styled.div`
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 `;
 
 const Dates = styled.div`
-    font-size: 10px;
-    color: #666;
+  font-size: 10px;
+  color: #666;
 `;
 
 const EducationSection = ({ education }) => (
-    <ResumeSection
-        left={<ResumeSectionTitle>Education</ResumeSectionTitle>}
-        right={
-            <div>
-                <Institution>{education[0].institution}</Institution>
-                <Dates>
-                    {education[0].startDate} - {education[0].endDate}
-                </Dates>
-            </div>
-        }
-    />
+  <ResumeSection
+    left={<ResumeSectionTitle>Education</ResumeSectionTitle>}
+    right={
+      <div>
+        <Institution>{education[0].institution}</Institution>
+        <Dates>
+          {education[0].startDate} - {education[0].endDate}
+        </Dates>
+      </div>
+    }
+  />
 );
 
 export default EducationSection;
