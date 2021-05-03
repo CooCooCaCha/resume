@@ -6,10 +6,7 @@ import {
   faPhone,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons/faGithub";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import Photo from "../images/photo.jpg";
 
 const ResumeHeaderContainer = styled.div`

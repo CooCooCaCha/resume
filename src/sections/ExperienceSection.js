@@ -26,11 +26,11 @@ const Position = styled.div`
 `;
 
 const Summary = styled.div`
-  font-size: 12px;
+  font-size: 14px;
 `;
 
 const Highlight = styled.div`
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 10px;
   display: flex;
   flex-direction: row;
