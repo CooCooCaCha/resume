@@ -4,7 +4,7 @@
     "title": "Software Engineer",
     "email": "wrjstuff@gmail.com",
     "phone": "(404) 403-3463",
-    "summary": "Seeking a front-end or full-stack web development position.",
+    "summary": "Full-stack web and mobile app developer.",
     "location": {
       "city": "Atlanta",
       "state": "GA"
@@ -36,10 +36,10 @@
       "endDate": "Present",
       "summary": "Full-Stack javascript developer on a small team dedicated to rebuilding our company's infrastructure.",
       "highlights": [
-        "Rebuilt a legacy application on a modern tech stack. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
-        "Helped interview all subsequent developers and bring them up to speed with our tech stack. This included mentoring and pair programming.",
-        "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
-        "Built an GraphQL API as the backbone of our application. Solved N+1 query problems by using the Facebook Dataloader library."
+        "Rebuilt a legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms. This allowed us to accomplish a lot with a small team.",
+        "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
+        "Helped interview new developers and bring them up to speed on our tech stack. This included mentoring and some pair programming.",
+        "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines."
       ]
     },
     {
@@ -50,7 +50,7 @@
       "summary": "ReactJS and front-end specialist.",
       "highlights": [
         "Became responsible for upgrading the dependencies for all of our projects.",
-        "Gave presentations and introduced new React techniques such as Fragments and Render-Props.",
+        "Gave presentations and introduced new React techniques such as Fragments and Render-Props (I left right before hooks were released).",
         "Completely rebuilt the UI for my product.",
         "Built a dynamically generated page flow system. Pages were generated from data returned from a REST API.",
         "Regularly contributed to our core React frameworks.",
@@ -62,7 +62,7 @@
       "position": "Co-Founder / Lead Engineer",
       "startDate": "2016",
       "endDate": "2017",
-      "summary": "Design and manage infrastructure on Google Cloud and Firebase. Made all of the software architecture decisions. Wrote all of the code. Responded to outages and server issues.",
+      "summary": "Made all of the software architecture decisions. Wrote all of the code. Responded to outages and server issues.",
       "highlights": [
         "Developed a prototype app using React-Native.",
         "Developed a website using React.",
@@ -79,10 +79,10 @@
       "website": "https://salesloft.com/",
       "startDate": "2015",
       "endDate": "2016",
-      "summary": "Designed, developed, and deployed features for the Salesloft SAAS application. Touched upon everything from database design and migrations to front-end UX design and development.",
+      "summary": "Designed, developed, and deployed features for the Salesloft SAAS application. Thist touched upon everything from database design and migrations to front-end UX design and development.",
       "highlights": [
-        "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously and on the same server cluster.",
-        "Learned Ruby, Ruby on Rails, and Angular on the job."
+        "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously on the same server cluster.",
+        "Learned Ruby, Ruby on Rails, and Angular on the job. Started contributing quickly."
       ]
     },
     {
@@ -159,12 +159,12 @@
       "keywords": ["Cross-Country", "Track & Field"]
     },
     {
-      "name": "Producing Electronic Music",
-      "keywords": ["House Music", "Drum & Bass", "Dubstep"]
+      "name": "Producing/Listening to Electronic Music",
+      "keywords": ["Synthesizers", "Audio Theory", "Live Music"]
     },
     {
       "name": "Stock Market and Cryptocurrency",
-      "keywords": ["Bitcoin", "Ethereum", "Algorithmic Trading"]
+      "keywords": ["Bitcoin", "Ethereum"]
     },
     {
       "name": "Machine Learning",
