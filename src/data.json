@@ -117,8 +117,7 @@
   "education": [
     {
       "institution": "Georgia Institute of Technology",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
+      "degree": "Bachelor's Degree - Computer Science",
       "startDate": "2007",
       "endDate": "2012"
     }

@@ -8,6 +8,10 @@ const Institution = styled.div`
   font-weight: 600;
 `;
 
+const Degree = styled.div`
+  font-size: 12px;
+`;
+
 const Dates = styled.div`
   font-size: 10px;
   color: #666;
@@ -19,6 +23,7 @@ const EducationSection = ({ education }) => (
     right={
       <div>
         <Institution>{education[0].institution}</Institution>
+        <Degree>{education[0].degree}</Degree>
         <Dates>
           {education[0].startDate} - {education[0].endDate}
         </Dates>
