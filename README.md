@@ -1,3 +1,5 @@
 # resume
 
-Over-engineered resume built with react, webpack, puppeteer, and styled-components!
+Over-engineered resume built with react, vitejs, puppeteer, and tailwindcss!
+
+## Why?
