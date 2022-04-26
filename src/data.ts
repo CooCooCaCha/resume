@@ -5,7 +5,6 @@ const resumeData: ResumeData = {
     name: "William R. Johnson",
     title: "Software Engineer",
     email: "wrjstuff@gmail.com",
-    phone: "(404) 403-3463",
     summary: "Full-stack web and mobile app developer.",
     location: {
       city: "Atlanta",
@@ -32,11 +31,13 @@ const resumeData: ResumeData = {
           title: "Principal Software Engineer",
           startYear: 2021,
           endYear: "present",
-          summary: "Part manager, part senior engineer, part team-lead.",
+          summary:
+            "Lead a team of 5 people to build internal analytics and tooling.",
           highlights: [
-            "Lead team responsible for building internal analytics and tooling.",
             "Mentored engineers on my team, performed 1-on-1's, and wrote yearly performance reviews.",
-            "Responsible for building and maintaining core systems that my team uses to build features.",
+            "Responsible for architecting, coding, and maintaining core systems used by my team.",
+            "Wrote engineering documentation and started writing architecture decision records (ADRs).",
+            "Advocated for restructing our teams to a product teams-like structure. This was eventually implemented.",
           ],
         },
         {
@@ -44,12 +45,13 @@ const resumeData: ResumeData = {
           startYear: 2018,
           endYear: 2021,
           summary:
-            "Full-Stack javascript developer on a small team dedicated to rebuilding our company's infrastructure.",
+            "Full-Stack javascript developer on a small team dedicated to rebuilding our company's software platform.",
           highlights: [
-            "Rebuilt a legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms. This allowed us to accomplish a lot with a small team.",
+            "Rebuilt a legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
             "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
-            "Helped interview new developers and bring them up to speed on our tech stack. This included mentoring and some pair programming.",
+            "Interviewed and onboarded new developers.",
             "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
+            "Architected prototypes for a new navigation system and a better architecture for web. Both were accepted and implemented.",
           ],
         },
       ],
@@ -164,7 +166,7 @@ const resumeData: ResumeData = {
       publishDate: new Date("2017-02-11"),
       url: "https://medium.com/@bill_24885/my-quest-to-learn-machine-learning-6aeae1d3ae17",
       summary:
-        "A quick overview of some recent milestones in my quest to learn machine learning.",
+        "An overview of some recent milestones in my quest to learn machine learning.",
     },
   ],
 
@@ -181,7 +183,6 @@ const resumeData: ResumeData = {
     { name: "AWS and Google Cloud" },
     { name: "HTML" },
     { name: "CSS" },
-    { name: "Functional Programming" },
     { name: "Redux" },
     { name: "Python" },
     { name: "Ruby" },

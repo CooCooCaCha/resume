@@ -11,7 +11,6 @@ export interface Basics {
   name: string;
   title: string;
   email: string;
-  phone: string;
   summary: string;
   location: Location;
   profiles: Profile[];
