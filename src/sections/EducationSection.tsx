@@ -1,5 +1,11 @@
 import { Degree } from "../types";
 import ResumeSection from "../components/ResumeSection";
+import SectionHeaderText from "../components/SectionHeaderText";
+import createTextComponent from "../utils/createTextComponent";
+
+const Institution = createTextComponent("text-sm font-bold");
+const DegreeText = createTextComponent("text-sm");
+const TimePeriod = createTextComponent("text-sm");
 
 interface EducationSectionProps {
   education: Degree[];
@@ -7,14 +13,14 @@ interface EducationSectionProps {
 
 const EducationSection = ({ education }: EducationSectionProps) => (
   <ResumeSection
-    left={<div>EDUCATION</div>}
+    left={<SectionHeaderText>EDUCATION</SectionHeaderText>}
     right={
       <>
         {education.map((degree, i) => (
           <div key={i}>
-            <div>{degree.institution}</div>
-            <div>{degree.degree}</div>
-            <div>{`${degree.startYear} - ${degree.endYear}`}</div>
+            <Institution>{degree.institution}</Institution>
+            <DegreeText>{degree.degree}</DegreeText>
+            <TimePeriod>{`${degree.startYear} - ${degree.endYear}`}</TimePeriod>
           </div>
         ))}
       </>
