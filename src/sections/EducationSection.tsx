@@ -5,7 +5,7 @@ import createTextComponent from "../utils/createTextComponent";
 
 const Institution = createTextComponent("text-sm font-bold");
 const DegreeText = createTextComponent("text-sm");
-const TimePeriod = createTextComponent("text-sm");
+const TimePeriod = createTextComponent("text-xs text-textDate");
 
 interface EducationSectionProps {
   education: Degree[];

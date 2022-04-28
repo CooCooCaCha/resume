@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header = ({ basics }: HeaderProps) => {
   return (
-    <div className="flex bg-primary px-3 py-3 justify-between">
+    <div className="flex bg-primary px-4 py-3 justify-between">
       <div className="flex items-center">
         <Avatar />
         <NameAndTitle name={basics.name} title={basics.title} />
