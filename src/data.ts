@@ -32,11 +32,11 @@ const resumeData: ResumeData = {
           startYear: 2021,
           endYear: "present",
           summary:
-            "Lead a team of 5 people to build internal analytics and tooling.",
+            "Lead a team of 5 engineers to build internal analytics and tooling.",
           highlights: [
             "Mentored engineers on my team, performed 1-on-1's, and wrote yearly performance reviews.",
             "Responsible for architecting, coding, and maintaining core systems used by my team.",
-            "Wrote engineering documentation and started writing architecture decision records (ADRs).",
+            "Wrote engineering documentation and introduced architecture decision records (ADRs) to our documentation.",
             "Advocated for restructing our teams to a product teams-like structure. This was eventually implemented.",
           ],
         },
@@ -47,7 +47,7 @@ const resumeData: ResumeData = {
           summary:
             "Full-Stack javascript developer on a small team dedicated to rebuilding our company's software platform.",
           highlights: [
-            "Rebuilt a legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
+            "Rebuilt our legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
             "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
             "Interviewed and onboarded new developers.",
             "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
@@ -66,9 +66,9 @@ const resumeData: ResumeData = {
           summary: "ReactJS and front-end specialist.",
           highlights: [
             "Became responsible for upgrading the dependencies for all of our projects.",
-            "Gave presentations and introduced new React techniques such as Fragments and Render-Props (I left right before hooks were released).",
+            "Gave presentations and introduced new React techniques such as Fragments and Render-Props (hooks were released after I left, but we would have used those instead).",
             "Completely rebuilt the UI for my product.",
-            "Built a dynamically generated page flow system. Pages were generated from data returned from a REST API.",
+            "Built a dynamically generated page flow system. Multi-page flows were generated from data returned from our REST API.",
             "Regularly contributed to our core React frameworks.",
             "Mentored and trained junior developers on React.",
           ],
@@ -105,7 +105,7 @@ const resumeData: ResumeData = {
           startYear: 2015,
           endYear: 2016,
           summary:
-            "Designed, developed, and deployed features for the Salesloft SAAS application. Thist touched upon everything from database design and migrations to front-end UX design and development.",
+            "Designed, developed, and deployed features for the Salesloft SAAS application. This touched upon everything from database design and migrations to front-end UX design and development.",
           highlights: [
             "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously on the same server cluster.",
             "Learned Ruby, Ruby on Rails, and Angular on the job. Started contributing quickly.",
