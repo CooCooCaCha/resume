@@ -13,7 +13,7 @@ const ExperienceSection = ({ work }: ExperienceSectionProps) => {
     <>
       <ResumeSection left={<SectionHeaderText>EXPERIENCE</SectionHeaderText>} />
 
-      {work.slice(0, 4).map((job, i) => (
+      {work.slice(0, 5).map((job, i) => (
         <>
           <Spacer />
           <JobItem key={i} job={job} />

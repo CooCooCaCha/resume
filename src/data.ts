@@ -25,12 +25,28 @@ const resumeData: ResumeData = {
   },
   work: [
     {
+      company: "CancerIQ",
+      positions: [
+        {
+          title: "Senior Software Engineer",
+          startYear: 2022,
+          endYear: "present",
+          summary:
+            "Senior software engineer building apps using React, GraphQL and NodeJS which enable preventative care and early cancer detection.",
+          highlights: [
+            "Tech lead on the genogram project. We are rewriting our web-based tool which allows doctors to visually create family cancer history charts.",
+            "Lead coder on the project but also managing a small team of engineers.",
+          ],
+        },
+      ],
+    },
+    {
       company: "World 50",
       positions: [
         {
           title: "Principal Software Engineer",
           startYear: 2021,
-          endYear: "present",
+          endYear: 2022,
           summary:
             "Lead a team of 5 engineers to build internal analytics and tooling.",
           highlights: [
@@ -49,7 +65,6 @@ const resumeData: ResumeData = {
           highlights: [
             "Rebuilt our legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
             "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
-            "Interviewed and onboarded new developers.",
             "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
             "Architected prototypes for a new navigation system and a better architecture for web. Both were accepted and implemented.",
           ],
@@ -65,7 +80,6 @@ const resumeData: ResumeData = {
           endYear: 2018,
           summary: "ReactJS and front-end specialist.",
           highlights: [
-            "Became responsible for upgrading the dependencies for all of our projects.",
             "Gave presentations and introduced new React techniques such as Fragments and Render-Props (hooks were released after I left, but we would have used those instead).",
             "Completely rebuilt the UI for my product.",
             "Built a dynamically generated page flow system. Multi-page flows were generated from data returned from our REST API.",
@@ -85,13 +99,10 @@ const resumeData: ResumeData = {
           summary:
             "Made all of the software architecture decisions. Wrote all of the code. Responded to outages and server issues.",
           highlights: [
-            "Developed a prototype app using React-Native.",
-            "Developed a website using React.",
-            "Setup and maintained infrastructure using Google Cloud",
+            "Developed a homepage using React and a prototype app using React-Native.",
+            "Setup and maintained infrastructure using Google Cloud, including a Kubernetes cluster.",
             "Built a service to automatically retrieve and update LetsEncrypt certificates for TLS/SSL encryption.",
-            "Wrote an audit-log service that lisented for changes in Firebase and inserted a change summary into Google BigQuery.",
-            "Setup Jenkins for continuous integration with Github.",
-            "Deployed a Kubernetes cluster using Google Container Engine.",
+            "Wrote an audit-log service that listened for changes in Firebase and inserted a change summary into Google BigQuery.",
           ],
         },
       ],
