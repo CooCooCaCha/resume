@@ -1,6 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-svg-core/styles.css" layer(components);
+
+@theme {
+  --font-sans: "Roboto";
+  --color-primary: #cc6464;
+  --color-textDefault: #555;
+  --color-textDate: #888;
+
+  --text-*: initial;
+  --text-xs: 0.65rem;
+  --text-xs--line-height: 0.75rem;
+  --text-sm: 0.75rem;
+  --text-sm--line-height: 0.75rem;
+  --text-base: 0.875rem;
+  --text-base--line-height: 0.875rem;
+  --text-lg: 1rem;
+  --text-lg--line-height: 1rem;
+  --text-xl: 1.125rem;
+  --text-xl--line-height: 1.125rem;
+  --text-2xl: 1.25rem;
+  --text-2xl--line-height: 1.25rem;
+}
 
 html {
   @apply text-textDefault;

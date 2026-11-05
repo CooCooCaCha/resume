@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Job } from "../../types";
 import createTextComponent from "../../utils/createTextComponent";
 import ResumeSection from "../../components/ResumeSection";
@@ -30,10 +31,9 @@ const JobItem = ({ job }: JobItemProps) => {
       />
 
       {job.positions.map((position, i) => (
-        <>
+        <Fragment key={`${position.title}-${position.startYear}`}>
           {i > 0 && <Spacer />}
           <ResumeSection
-            key={i}
             left={
               <TimePeriod>{`${position.startYear} - ${position.endYear}`}</TimePeriod>
             }
@@ -41,8 +41,8 @@ const JobItem = ({ job }: JobItemProps) => {
               <>
                 {hasMultiplePositions && <JobTitle>{position.title}</JobTitle>}
                 <Summary>{position.summary}</Summary>
-                {position.highlights.map((highlight, i) => (
-                  <div className="flex mt-[2px]">
+                {position.highlights.map((highlight) => (
+                  <div key={highlight} className="flex mt-[2px]">
                     <FontAwesomeIcon
                       className="text-primary w-1 mr-1 mt-[-1px]"
                       icon={faCircle}
@@ -53,7 +53,7 @@ const JobItem = ({ job }: JobItemProps) => {
               </>
             }
           />
-        </>
+        </Fragment>
       ))}
     </>
   );

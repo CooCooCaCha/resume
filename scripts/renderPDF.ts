@@ -1,20 +1,43 @@
-import * as puppeteer from "puppeteer";
-import * as path from "path";
+import { chromium } from "playwright";
+import { mkdir } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import { preview } from "vite";
 
-const url = `http://localhost:3000`;
-const pdfPath = path.join(__dirname, "../build/resume.pdf");
+const pdfPath = fileURLToPath(new URL("../build/resume.pdf", import.meta.url));
 
 const renderPDF = async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
+  const server = await preview({
+    preview: { host: "127.0.0.1", port: 0, open: false },
+  });
 
-  const gotoOptions = { waitUntil: "networkidle0" };
-  const pdfOptions = { path: pdfPath, format: "letter", printBackground: true };
+  try {
+    const url = server.resolvedUrls?.local[0];
+    if (!url) throw new Error("Could not determine the preview server URL.");
 
-  await page.goto(url, gotoOptions as any);
-  await page.pdf(pdfOptions as any);
+    const browser = await chromium.launch();
 
-  await browser.close();
+    try {
+      const page = await browser.newPage({
+        viewport: { width: 800, height: 600 },
+      });
+      await page.goto(url, { waitUntil: "networkidle" });
+      await page.evaluate(() => document.fonts.ready);
+      await mkdir(new URL("../build/", import.meta.url), { recursive: true });
+      await page.pdf({
+        path: pdfPath,
+        format: "Letter",
+        printBackground: true,
+      });
+      console.log(`Resume saved to ${pdfPath}`);
+    } finally {
+      await browser.close();
+    }
+  } finally {
+    await server.close();
+  }
 };
 
-renderPDF();
+renderPDF().catch((error: unknown) => {
+  console.error(error);
+  process.exitCode = 1;
+});

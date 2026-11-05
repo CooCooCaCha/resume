@@ -1,13 +1,12 @@
 # resume
 
-Over-engineered resume built with react, typescript, vitejs, puppeteer, and tailwindcss.
+Over-engineered resume built with react, typescript, vitejs, playwright, and tailwindcss.
 
 ## Why?
 
 I think it's a cool idea to build my resume using the same technologies that I use for my work!
 
 I also wanted to try ViteJS and TailwindCSS.
-
 
 ViteJS is a fast bundler that, honestly, turned out way faster than my previous webpack build system.
 

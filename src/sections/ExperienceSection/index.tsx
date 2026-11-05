@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Job } from "../../types";
 import ResumeSection from "../../components/ResumeSection";
 import SectionHeaderText from "../../components/SectionHeaderText";
@@ -13,11 +14,11 @@ const ExperienceSection = ({ work }: ExperienceSectionProps) => {
     <>
       <ResumeSection left={<SectionHeaderText>EXPERIENCE</SectionHeaderText>} />
 
-      {work.slice(0, 5).map((job, i) => (
-        <>
+      {work.slice(0, 5).map((job) => (
+        <Fragment key={job.company}>
           <Spacer />
-          <JobItem key={i} job={job} />
-        </>
+          <JobItem job={job} />
+        </Fragment>
       ))}
     </>
   );
