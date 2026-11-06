@@ -27,7 +27,7 @@ const resumeData: ResumeData = {
     {
       company: "CancerIQ",
       summary:
-        "Built apps for cancer prevention and early detection using Rails, React, Rust, Elixir, NodeJS, and Google Cloud.",
+        "Built apps for cancer prevention and early detection using Rails, React, Rust, Elixir, Node.js, and Google Cloud.",
       title: "Principal Software Engineer",
       startYear: 2022,
       endYear: "present",
@@ -38,11 +38,11 @@ const resumeData: ResumeData = {
         },
       ],
       highlights: [
-        "Contributed to our AI workflows, for example by creating a unified workspace with all of our projects and a cross-project AGENTS.md file so AI can easily work across projects.",
-        "Tech lead and team manager on the genogram project. We rewrote our visual family tree builder using React and refactored our rails backend to support new features.",
-        "Researched, designed, and implemented a novel layout algorithm for family tree visualization.",
-        "Wrote a custom query language using parser combinators that allowed product managers to show targeted content to patients based on patient data.",
-        "Build a data import pipeline for patient data that was tested to 1 million+ records and 100+ columns.",
+        "Led the genogram team in rewriting our visual family tree builder in React and refactoring the Rails backend to support new features.",
+        "Researched and developed a deterministic, recursive family tree layout algorithm that preserves paternal/maternal orientation and keeps twins adjacent, replacing our previous Sugiyama-based layout.",
+        "Built a custom query language using parser combinators, enabling product managers to target content based on patient data.",
+        "Worked with a co-founder to standardize an Excel format for patient data and built a Ruby import pipeline using pre-generated UUIDs and transactions to prevent partial patient imports and resume safely after failures. Tested with 1M+ records and 100+ columns.",
+        "Led improvements to our AI-assisted development workflow by grouping apps and services in one folder and writing an AGENTS.md to give AI tools codebase context and development guidelines.",
       ],
     },
     {
