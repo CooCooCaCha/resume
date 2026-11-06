@@ -48,7 +48,7 @@ const resumeData: ResumeData = {
     {
       company: "World 50",
       summary:
-        "Manager of 5 engineers, and full-stack software engineer dedicated to rebuilding our company's software platform on react-native and nodejs.",
+        "Full-stack engineer and manager of five engineers working on the company's React Native and Node.js platform.",
       title: "Principal Software Engineer",
       startYear: 2018,
       endYear: 2022,
@@ -59,14 +59,11 @@ const resumeData: ResumeData = {
         },
       ],
       highlights: [
-        "Mentored engineers on my team, performed 1-on-1's, and wrote yearly performance reviews.",
-        "Responsible for architecting, coding, and maintaining core systems used by my team.",
-        "Wrote engineering documentation and introduced architecture decision records (ADRs) to our documentation.",
-        "Advocated for restructing our teams to a product teams-like structure. This was eventually implemented.",
-        "Rebuilt our legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
-        "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
-        "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
-        "Architected prototypes for a new navigation system and a better architecture for web. Both were accepted and implemented.",
+        "Rebuilt the legacy application with React Native, sharing most of the code across web, iOS, and Android.",
+        "Rebuilt the API with GraphQL, using DataLoader to avoid N+1 queries.",
+        "Proposed an engineering process, later adopted, in which temporary, cross-functional teams planned and delivered individual epics.",
+        "Set up databases, servers, and build pipelines using AWS, Google Cloud, and CircleCI.",
+        "Introduced architecture decision records to document engineering decisions.",
       ],
     },
     {
