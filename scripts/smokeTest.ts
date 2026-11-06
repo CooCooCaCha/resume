@@ -95,7 +95,7 @@ try {
           });
           const bounds = await dates.boundingBox();
           assert.ok(
-            bounds && bounds.x < 150,
+            bounds && bounds.x < 135,
             `Dates must be in the left column: ${job.company}`,
           );
           for (const promotion of job.promotions ?? []) {
@@ -118,7 +118,7 @@ try {
         }
         assert.equal(result.headerColor, "rgb(204, 100, 100)");
         assert.equal(result.textColor, "rgb(85, 85, 85)");
-        assert.equal(result.columns, "150px 634px");
+        assert.equal(result.columns, "135px 649px");
         assert.equal(result.sectionFontSize, "18px");
         assert.ok(result.imageLoaded, "The avatar must load");
         assert.ok(result.icons >= 3, "Font Awesome icons must render");
