@@ -26,137 +26,114 @@ const resumeData: ResumeData = {
   work: [
     {
       company: "CancerIQ",
-      positions: [
+      summary:
+        "Built apps for cancer prevention and early detection using Rails, React, Rust, Elixir, NodeJS, and Google Cloud.",
+      title: "Principal Software Engineer",
+      startYear: 2022,
+      endYear: "present",
+      promotions: [
         {
           title: "Senior Software Engineer",
-          startYear: 2022,
-          endYear: "present",
-          summary:
-            "Senior software engineer building apps using React, GraphQL and NodeJS which enable preventative care and early cancer detection.",
-          highlights: [
-            "Tech lead on the genogram project. We are rewriting our web-based tool which allows doctors to visually create family cancer history charts.",
-            "Lead coder on the project but also managing a small team of engineers.",
-          ],
+          year: 2026,
         },
+      ],
+      highlights: [
+        "Contributed to our AI workflows, for example by creating a unified workspace with all of our projects and a cross-project AGENTS.md file so AI can easily work across projects.",
+        "Tech lead and team manager on the genogram project. We rewrote our visual family tree builder using React and refactored our rails backend to support new features.",
+        "Researched, designed, and implemented a novel layout algorithm for family tree visualization.",
+        "Wrote a custom query language using parser combinators that allowed product managers to show targeted content to patients based on patient data.",
+        "Build a data import pipeline for patient data that was tested to 1 million+ records and 100+ columns.",
       ],
     },
     {
       company: "World 50",
-      positions: [
-        {
-          title: "Principal Software Engineer",
-          startYear: 2021,
-          endYear: 2022,
-          summary:
-            "Lead a team of 5 engineers to build internal analytics and tooling.",
-          highlights: [
-            "Mentored engineers on my team, performed 1-on-1's, and wrote yearly performance reviews.",
-            "Responsible for architecting, coding, and maintaining core systems used by my team.",
-            "Wrote engineering documentation and introduced architecture decision records (ADRs) to our documentation.",
-            "Advocated for restructing our teams to a product teams-like structure. This was eventually implemented.",
-          ],
-        },
+      summary:
+        "Manager of 5 engineers, and full-stack software engineer dedicated to rebuilding our company's software platform on react-native and nodejs.",
+      title: "Principal Software Engineer",
+      startYear: 2018,
+      endYear: 2022,
+      promotions: [
         {
           title: "Senior Software Engineer",
-          startYear: 2018,
-          endYear: 2021,
-          summary:
-            "Full-Stack javascript developer on a small team dedicated to rebuilding our company's software platform.",
-          highlights: [
-            "Rebuilt our legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
-            "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
-            "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
-            "Architected prototypes for a new navigation system and a better architecture for web. Both were accepted and implemented.",
-          ],
+          year: 2021,
         },
+      ],
+      highlights: [
+        "Mentored engineers on my team, performed 1-on-1's, and wrote yearly performance reviews.",
+        "Responsible for architecting, coding, and maintaining core systems used by my team.",
+        "Wrote engineering documentation and introduced architecture decision records (ADRs) to our documentation.",
+        "Advocated for restructing our teams to a product teams-like structure. This was eventually implemented.",
+        "Rebuilt our legacy application on a modern tech stack using React-Native. The application runs on web, iOS, and Android with the majority of the code shared between all three platforms.",
+        "Rebuilt our API using GraphQL. Additionally, we avoid N+1 query problems by using Facebook's Dataloader library.",
+        "Setup infrastructure on AWS, Google Cloud and CircleCI including databases, servers, and build pipelines.",
+        "Architected prototypes for a new navigation system and a better architecture for web. Both were accepted and implemented.",
       ],
     },
     {
       company: "TSYS",
-      positions: [
-        {
-          title: "Senior Software Engineer",
-          startYear: 2017,
-          endYear: 2018,
-          summary: "ReactJS and front-end specialist.",
-          highlights: [
-            "Gave presentations and introduced new React techniques such as Fragments and Render-Props (hooks were released after I left, but we would have used those instead).",
-            "Completely rebuilt the UI for my product.",
-            "Built a dynamically generated page flow system. Multi-page flows were generated from data returned from our REST API.",
-            "Regularly contributed to our core React frameworks.",
-            "Mentored and trained junior developers on React.",
-          ],
-        },
+      summary: "ReactJS and front-end specialist.",
+      title: "Senior Software Engineer",
+      startYear: 2017,
+      endYear: 2018,
+      highlights: [
+        "Gave presentations and introduced new React techniques such as Fragments and Render-Props (hooks were released after I left, but we would have used those instead).",
+        "Completely rebuilt the UI for my product.",
+        "Built a dynamically generated page flow system. Multi-page flows were generated from data returned from our REST API.",
+        "Regularly contributed to our core React frameworks.",
+        "Mentored and trained junior developers on React.",
       ],
     },
     {
       company: "Koble",
-      positions: [
-        {
-          title: "Co-Founder / Lead Engineer",
-          startYear: 2016,
-          endYear: 2017,
-          summary:
-            "Made all of the software architecture decisions. Wrote all of the code. Responded to outages and server issues.",
-          highlights: [
-            "Developed a homepage using React and a prototype app using React-Native.",
-            "Setup and maintained infrastructure using Google Cloud, including a Kubernetes cluster.",
-            "Built a service to automatically retrieve and update LetsEncrypt certificates for TLS/SSL encryption.",
-            "Wrote an audit-log service that listened for changes in Firebase and inserted a change summary into Google BigQuery.",
-          ],
-        },
+      summary:
+        "Made all of the software architecture decisions. Wrote all of the code. Responded to outages and server issues.",
+      title: "Co-Founder / Lead Engineer",
+      startYear: 2016,
+      endYear: 2017,
+      highlights: [
+        "Developed a homepage using React and a prototype app using React-Native.",
+        "Setup and maintained infrastructure using Google Cloud, including a Kubernetes cluster.",
+        "Built a service to automatically retrieve and update LetsEncrypt certificates for TLS/SSL encryption.",
+        "Wrote an audit-log service that listened for changes in Firebase and inserted a change summary into Google BigQuery.",
       ],
     },
     {
       company: "Salesloft",
+      summary:
+        "Designed, developed, and deployed features for the Salesloft SAAS application. This touched upon everything from database design and migrations to front-end UX design and development.",
       website: "https://salesloft.com/",
-      positions: [
-        {
-          title: "Full-Stack Software Engineer",
-          startYear: 2015,
-          endYear: 2016,
-          summary:
-            "Designed, developed, and deployed features for the Salesloft SAAS application. This touched upon everything from database design and migrations to front-end UX design and development.",
-          highlights: [
-            "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously on the same server cluster.",
-            "Learned Ruby, Ruby on Rails, and Angular on the job. Started contributing quickly.",
-          ],
-        },
+      title: "Full-Stack Software Engineer",
+      startYear: 2015,
+      endYear: 2016,
+      highlights: [
+        "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously on the same server cluster.",
+        "Learned Ruby, Ruby on Rails, and Angular on the job. Started contributing quickly.",
       ],
     },
     {
       company: "Nead Werx",
+      summary:
+        "In charge of researching and developing core software frameworks and coding standards as well as interviewing and training new engineers.",
       website: "http://www.neadwerx.com/",
-      positions: [
-        {
-          title: "Software Architect",
-          startYear: 2013,
-          endYear: 2015,
-          summary:
-            "In charge of researching and developing core software frameworks and coding standards as well as interviewing and training new engineers.",
-          highlights: [
-            "Developed an interactive visualization tool for retail stores using HTML5, CSS3, and Javascript. Think Google Maps but for retail stores.",
-            "Designed and developed a custom REST API framework in PHP.",
-            "Developed a graph-based API query system (before GraphQL existed).",
-          ],
-        },
+      title: "Software Architect",
+      startYear: 2013,
+      endYear: 2015,
+      highlights: [
+        "Developed an interactive visualization tool for retail stores using HTML5, CSS3, and Javascript. Think Google Maps but for retail stores.",
+        "Designed and developed a custom REST API framework in PHP.",
+        "Developed a graph-based API query system (before GraphQL existed).",
       ],
     },
     {
       company: "Cox Communications",
+      summary: "Developed tools and prototypes for the Core Applications Team.",
       website: "https://www.cox.com",
-      positions: [
-        {
-          title: "Co-op Software Engineer",
-          startYear: 2009,
-          endYear: 2011,
-          summary:
-            "Developed tools and prototypes for the Core Applications Team.",
-          highlights: [
-            "Implemented a rectangle-packing algorithm in Java with the purpose of combining multiple images into a single, large image. The overhead for each HTTP request was significant so using a single image reduced load time.",
-            "Wrote a prototype TV guide application featuring a lazy-loading system. Data was loaded as-needed and significantly reduced infrastructure requirements.",
-          ],
-        },
+      title: "Co-op Software Engineer",
+      startYear: 2009,
+      endYear: 2011,
+      highlights: [
+        "Implemented a rectangle-packing algorithm in Java with the purpose of combining multiple images into a single, large image. The overhead for each HTTP request was significant so using a single image reduced load time.",
+        "Wrote a prototype TV guide application featuring a lazy-loading system. Data was loaded as-needed and significantly reduced infrastructure requirements.",
       ],
     },
   ],
@@ -194,7 +171,7 @@ const resumeData: ResumeData = {
     { name: "AWS and Google Cloud" },
     { name: "HTML" },
     { name: "CSS" },
-    { name: "Redux" },
+    { name: "Rails" },
     { name: "Python" },
     { name: "Ruby" },
   ],

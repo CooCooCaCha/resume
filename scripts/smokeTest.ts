@@ -4,6 +4,7 @@ import { createServer, preview } from "vite";
 import data from "../src/data";
 
 const browser = await chromium.launch();
+const oversizedModes: string[] = [];
 
 try {
   for (const mode of ["development", "production"] as const) {
@@ -73,6 +74,47 @@ try {
             result.text.includes(job.company),
             `Missing company: ${job.company}`,
           );
+          if (job.summary) {
+            assert.ok(
+              result.text.includes(job.summary),
+              `Missing summary: ${job.company}`,
+            );
+          }
+          assert.ok(
+            result.text.includes(job.title),
+            `Missing role: ${job.title}`,
+          );
+          for (const highlight of job.highlights ?? []) {
+            assert.ok(
+              result.text.includes(highlight),
+              `Missing highlight: ${highlight}`,
+            );
+          }
+          const dates = page.getByText(`${job.startYear} - ${job.endYear}`, {
+            exact: true,
+          });
+          const bounds = await dates.boundingBox();
+          assert.ok(
+            bounds && bounds.x < 150,
+            `Dates must be in the left column: ${job.company}`,
+          );
+          for (const promotion of job.promotions ?? []) {
+            const line = page.getByText(
+              `Promoted from ${promotion.title} in ${promotion.year}.`,
+              { exact: true },
+            );
+            assert.equal(
+              await line.count(),
+              1,
+              `Missing promotion: ${job.company}`,
+            );
+            assert.equal(
+              await line.evaluate(
+                (element) => getComputedStyle(element).fontStyle,
+              ),
+              "italic",
+            );
+          }
         }
         assert.equal(result.headerColor, "rgb(204, 100, 100)");
         assert.equal(result.textColor, "rgb(85, 85, 85)");
@@ -89,10 +131,7 @@ try {
           12,
           "Contact icons must retain their width",
         );
-        assert.ok(
-          result.height <= 1056,
-          "The resume must fit a US Letter page",
-        );
+        if (result.height > 1056) oversizedModes.push(mode);
         assert.equal(
           result.overflowing,
           false,
@@ -116,3 +155,5 @@ try {
 } finally {
   await browser.close();
 }
+
+assert.deepEqual(oversizedModes, [], "The resume must fit a US Letter page");

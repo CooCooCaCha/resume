@@ -12,20 +12,22 @@ interface EducationSectionProps {
 }
 
 const EducationSection = ({ education }: EducationSectionProps) => (
-  <ResumeSection
-    left={<SectionHeaderText>EDUCATION</SectionHeaderText>}
-    right={
-      <>
-        {education.map((degree, i) => (
-          <div key={i}>
-            <Institution>{degree.institution}</Institution>
-            <DegreeText>{degree.degree}</DegreeText>
-            <TimePeriod>{`${degree.startYear} - ${degree.endYear}`}</TimePeriod>
-          </div>
-        ))}
-      </>
-    }
-  />
+  <div className="col-span-2 grid grid-cols-subgrid break-inside-avoid">
+    <ResumeSection
+      left={<SectionHeaderText>EDUCATION</SectionHeaderText>}
+      right={
+        <>
+          {education.map((degree, i) => (
+            <div key={i}>
+              <Institution>{degree.institution}</Institution>
+              <DegreeText>{degree.degree}</DegreeText>
+              <TimePeriod>{`${degree.startYear} - ${degree.endYear}`}</TimePeriod>
+            </div>
+          ))}
+        </>
+      }
+    />
+  </div>
 );
 
 export default EducationSection;

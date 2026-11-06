@@ -18,7 +18,7 @@ const renderPDF = async () => {
 
     try {
       const page = await browser.newPage({
-        viewport: { width: 800, height: 600 },
+        // viewport: { width: 800, height: 600 },
       });
       await page.goto(url, { waitUntil: "networkidle" });
       await page.evaluate(() => document.fonts.ready);

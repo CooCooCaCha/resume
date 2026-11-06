@@ -30,15 +30,17 @@ export interface Profile {
 export interface Job {
   company: string;
   website?: string;
-  positions: JobPosition[];
-}
-
-export interface JobPosition {
   title: string;
   startYear: number;
   endYear: number | "present";
-  summary: string;
-  highlights: string[];
+  summary?: string;
+  highlights?: string[];
+  promotions?: Promotion[];
+}
+
+export interface Promotion {
+  title: string;
+  year: number;
 }
 
 export interface Degree {
