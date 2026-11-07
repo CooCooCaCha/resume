@@ -11,7 +11,7 @@ const SkillsSection = ({ skills }: SkillsSectionProps) => (
     <ResumeSection
       left={<SectionHeaderText>SKILLS</SectionHeaderText>}
       right={
-        <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-1">
           {skills.map((category) => (
             <div key={category.name} className="text-sm">
               <span className="font-bold">{category.name}:</span>{" "}
