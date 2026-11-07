@@ -161,21 +161,22 @@ const resumeData: ResumeData = {
   ],
 
   skills: [
-    { name: "Javascript" },
-    { name: "Typecript" },
-    { name: "React" },
-    { name: "React-Native" },
-    { name: "GraphQL" },
-    { name: "Rust" },
-    { name: "NodeJS" },
-    { name: "SQL" },
-    { name: "Git" },
-    { name: "AWS and Google Cloud" },
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "Rails" },
-    { name: "Python" },
-    { name: "Ruby" },
+    {
+      name: "Languages",
+      skills: ["TypeScript", "JavaScript", "Ruby", "Rust", "Python"],
+    },
+    {
+      name: "Frontend & Mobile",
+      skills: ["React", "React Native", "HTML", "CSS"],
+    },
+    {
+      name: "Backend & Data",
+      skills: ["Rails", "Node.js", "GraphQL", "SQL", "PostgreSQL"],
+    },
+    {
+      name: "Cloud & Tooling",
+      skills: ["AWS", "Google Cloud", "Kubernetes", "Git"],
+    },
   ],
 
   interests: [

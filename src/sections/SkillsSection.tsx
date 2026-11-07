@@ -1,12 +1,9 @@
-import { Skill } from "../types";
+import { SkillCategory } from "../types";
 import ResumeSection from "../components/ResumeSection";
 import SectionHeaderText from "../components/SectionHeaderText";
-import createTextComponent from "../utils/createTextComponent";
-
-const SkillName = createTextComponent("text-xs");
 
 interface SkillsSectionProps {
-  skills: Skill[];
+  skills: SkillCategory[];
 }
 
 const SkillsSection = ({ skills }: SkillsSectionProps) => (
@@ -14,9 +11,12 @@ const SkillsSection = ({ skills }: SkillsSectionProps) => (
     <ResumeSection
       left={<SectionHeaderText>SKILLS</SectionHeaderText>}
       right={
-        <div className="grid grid-cols-[1fr_1fr_1fr_1fr]">
-          {skills.map((skill, i) => (
-            <SkillName key={i}>{skill.name}</SkillName>
+        <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+          {skills.map((category) => (
+            <div key={category.name} className="text-sm">
+              <span className="font-bold">{category.name}:</span>{" "}
+              {category.skills.join(", ")}
+            </div>
           ))}
         </div>
       }
