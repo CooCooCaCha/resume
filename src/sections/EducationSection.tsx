@@ -12,7 +12,7 @@ interface EducationSectionProps {
 }
 
 const EducationSection = ({ education }: EducationSectionProps) => (
-  <div className="col-span-2 grid grid-cols-subgrid break-inside-avoid">
+  <div className="col-span-2 grid grid-cols-subgrid break-inside-avoid print:block">
     <ResumeSection
       left={<SectionHeaderText>EDUCATION</SectionHeaderText>}
       right={

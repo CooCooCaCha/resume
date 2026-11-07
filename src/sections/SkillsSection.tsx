@@ -10,16 +10,18 @@ interface SkillsSectionProps {
 }
 
 const SkillsSection = ({ skills }: SkillsSectionProps) => (
-  <ResumeSection
-    left={<SectionHeaderText>SKILLS</SectionHeaderText>}
-    right={
-      <div className="grid grid-cols-[1fr_1fr_1fr_1fr]">
-        {skills.map((skill, i) => (
-          <SkillName key={i}>{skill.name}</SkillName>
-        ))}
-      </div>
-    }
-  />
+  <div className="col-span-2 grid grid-cols-subgrid break-inside-avoid print:block">
+    <ResumeSection
+      left={<SectionHeaderText>SKILLS</SectionHeaderText>}
+      right={
+        <div className="grid grid-cols-[1fr_1fr_1fr_1fr]">
+          {skills.map((skill, i) => (
+            <SkillName key={i}>{skill.name}</SkillName>
+          ))}
+        </div>
+      }
+    />
+  </div>
 );
 
 export default SkillsSection;

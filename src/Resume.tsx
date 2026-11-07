@@ -11,7 +11,7 @@ const Resume = () => (
   <>
     <Header basics={data.basics} />
 
-    <div className="grid auto-rows-min grid-cols-[135px_1fr] p-4 pt-3">
+    <div className="grid auto-rows-min grid-cols-[135px_1fr] p-4 pt-3 print:block">
       <ExperienceSection work={data.work} />
       <Spacer />
       <EducationSection education={data.education} />
