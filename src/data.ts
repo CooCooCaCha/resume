@@ -53,7 +53,7 @@ const resumeData: ResumeData = {
     {
       company: "World 50",
       summary:
-        "Full-stack engineer and manager of five engineers working on the company's React Native and Node.js platform.",
+        "Full-stack engineer and manager of five engineers on our React Native and Node.js platform.",
       title: "Principal Software Engineer",
       startYear: 2018,
       endYear: 2022,

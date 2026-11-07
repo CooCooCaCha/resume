@@ -14,9 +14,9 @@ const ExperienceSection = ({ work }: ExperienceSectionProps) => {
     <>
       <ResumeSection left={<SectionHeaderText>EXPERIENCE</SectionHeaderText>} />
 
-      {work.slice(0, 5).map((job) => (
+      {work.slice(0, 5).map((job, index) => (
         <Fragment key={job.company}>
-          <Spacer />
+          {index === 0 ? <div className="w-full h-2" /> : <Spacer />}
           <JobItem job={job} />
         </Fragment>
       ))}
