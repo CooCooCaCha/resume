@@ -32,7 +32,7 @@ const resumeData: ResumeData = {
     {
       company: "CancerIQ",
       summary:
-        "Built apps for cancer prevention and early detection using Rails, React, Rust, Elixir, Node.js, and Google Cloud.",
+        "Built apps for cancer prevention and early detection using Rails, React, Rust, Node.js, and Google Cloud.",
       title: "Principal Software Engineer",
       startYear: 2022,
       endYear: "present",
@@ -101,7 +101,7 @@ const resumeData: ResumeData = {
     {
       company: "Salesloft",
       summary:
-        "Developed features for Salesloft’s sales automation platform, from database design and migrations to frontend UI.",
+        "Developed Salesloft’s sales automation platform, from database design and migrations to frontend UI.",
       website: "https://salesloft.com/",
       title: "Full-Stack Software Engineer",
       startYear: 2015,
