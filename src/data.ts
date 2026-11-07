@@ -92,7 +92,7 @@ const resumeData: ResumeData = {
       startYear: 2016,
       endYear: 2017,
       highlights: [
-        "Built the React Native app and backend as the sole engineer, owning software architecture and implementation.",
+        "Built the React Native app and backend solo, owning software architecture and implementation.",
         "Set up Google Cloud infrastructure, including a Kubernetes cluster, configured CI pipelines, and distributed iOS builds through TestFlight.",
         "Built a service to automate Let’s Encrypt certificate provisioning and renewal for TLS/SSL encryption.",
         "Built an audit-log service that recorded Firebase change summaries in BigQuery.",
@@ -107,9 +107,9 @@ const resumeData: ResumeData = {
       startYear: 2015,
       endYear: 2016,
       highlights: [
-        "Built a Docker-based QA environment for testing multiple versions of the application simultaneously on the same server cluster.",
+        "Built a Docker-based QA environment to test multiple app versions simultaneously on one server cluster.",
         "Contributed to integrating a third-party sentiment analysis service into the application’s email features.",
-        "Learned Ruby, Rails, and Angular on the job with no prior experience in those technologies, contributing my first code on day one.",
+        "Learned Ruby, Rails, and Angular on the job with no prior experience, contributing code on day one.",
       ],
     },
     {

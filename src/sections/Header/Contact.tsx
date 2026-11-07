@@ -34,7 +34,7 @@ const Contact = ({ email, location, profiles }: ContactProps) => {
   );
 
   return (
-    <div className="flex flex-col gap-y-0">
+    <div className="flex flex-col gap-y-0.5">
       <ContactItem icon={faEnvelope} label={email} />
       <ContactItem
         icon={faLocationDot}
