@@ -96,14 +96,15 @@ const resumeData: ResumeData = {
     {
       company: "Salesloft",
       summary:
-        "Designed, developed, and deployed features for the Salesloft SAAS application. This touched upon everything from database design and migrations to front-end UX design and development.",
+        "Developed features for Salesloft’s sales automation platform, from database design and migrations to frontend UI.",
       website: "https://salesloft.com/",
       title: "Full-Stack Software Engineer",
       startYear: 2015,
       endYear: 2016,
       highlights: [
-        "Developed a new QA system using Docker. Different versions of our application could be tested simultaneously on the same server cluster.",
-        "Learned Ruby, Ruby on Rails, and Angular on the job. Started contributing quickly.",
+        "Built a Docker-based QA environment for testing multiple versions of the application simultaneously on the same server cluster.",
+        "Contributed to integrating a third-party sentiment analysis service into the application’s email features.",
+        "Learned Ruby, Rails, and Angular on the job with no prior experience in those technologies, contributing my first code on day one.",
       ],
     },
     {
