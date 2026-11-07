@@ -17,6 +17,11 @@ const resumeData: ResumeData = {
         url: "https://github.com/CooCooCaCha",
       },
       {
+        network: "LinkedIn",
+        username: "wrjcareer",
+        url: "https://www.linkedin.com/in/wrjcareer/",
+      },
+      {
         network: "Medium",
         username: "bill_24885",
         url: "https://medium.com/@bill_24885",

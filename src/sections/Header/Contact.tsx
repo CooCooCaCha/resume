@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Location, Profile } from "../../types";
 
 interface ContactItemProps {
@@ -28,6 +28,10 @@ const Contact = ({ email, location, profiles }: ContactProps) => {
     () => profiles.find((profile) => profile.network === "Github"),
     [profiles]
   );
+  const linkedinProfile = useMemo(
+    () => profiles.find((profile) => profile.network === "LinkedIn"),
+    [profiles]
+  );
 
   return (
     <div className="flex flex-col gap-y-1">
@@ -39,6 +43,11 @@ const Contact = ({ email, location, profiles }: ContactProps) => {
 
       {!!githubProfile && (
         <ContactItem icon={faGithub} label={githubProfile.username} />
+      )}
+      {!!linkedinProfile && (
+        <a href={linkedinProfile.url}>
+          <ContactItem icon={faLinkedin} label={linkedinProfile.username} />
+        </a>
       )}
     </div>
   );
