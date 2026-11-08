@@ -42,7 +42,9 @@ const Contact = ({ email, location, profiles }: ContactProps) => {
       />
 
       {!!githubProfile && (
-        <ContactItem icon={faGithub} label={githubProfile.username} />
+        <a href={githubProfile.url}>
+          <ContactItem icon={faGithub} label={githubProfile.username} />
+        </a>
       )}
       {!!linkedinProfile && (
         <a href={linkedinProfile.url}>
