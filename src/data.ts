@@ -43,17 +43,17 @@ const resumeData: ResumeData = {
         },
       ],
       highlights: [
-        "Led the genogram team in rewriting our visual family tree builder in React and refactoring the Rails backend to support new features.",
-        "Researched and developed a deterministic, recursive family tree layout algorithm that preserves paternal/maternal orientation and keeps twins adjacent, replacing our previous Sugiyama-based layout.",
-        "Built a custom query language using parser combinators, enabling product managers to target content based on patient data.",
-        "Worked with a co-founder to standardize an Excel format for patient data and built a Ruby import pipeline using pre-generated UUIDs and transactions to prevent partial patient imports and resume safely after failures. Tested with 1M+ records and 100+ columns.",
+        "Led the team in rewriting our visual family tree (genogram) builder in React and refactoring the Rails backend to support new features.",
+        "Researched and developed a deterministic, recursive family tree layout algorithm that preserves paternal/maternal orientation and keeps twins adjacent, improving upon our Sugiyama-based algorithm.",
+        "Built a custom query language using parser combinators, enabling product managers to display targeted content based on patient data.",
+        "Worked with a co-founder to standardize an Excel format for patient data and built a Ruby import pipeline using pre-generated UUIDs and transactions to prevent partial patient imports and resume safely after failures. Imported 500K+ records with 100+ columns.",
         "Led improvements to our AI-assisted development workflow by grouping apps and services in one folder and writing an AGENTS.md to give AI tools codebase context and development guidelines.",
       ],
     },
     {
       company: "World 50",
       summary:
-        "Full-stack engineer and manager of five engineers on our React Native and Node.js platform.",
+        "Full-stack engineer and manager of five engineers on our private social platform for senior executives.",
       title: "Principal Software Engineer",
       startYear: 2018,
       endYear: 2022,
@@ -65,7 +65,7 @@ const resumeData: ResumeData = {
       ],
       highlights: [
         "Rebuilt the legacy application with React Native, sharing most of the code across web, iOS, and Android.",
-        "Rebuilt the API with GraphQL, using DataLoader to avoid N+1 queries.",
+        "Rebuilt the API with Node.js and GraphQL, using DataLoader to avoid N+1 queries.",
         "Proposed an engineering process, later adopted, in which temporary, cross-functional teams planned and delivered individual epics.",
         "Set up databases, servers, and build pipelines using AWS, Google Cloud, and CircleCI.",
         "Built an activity feed that let admins filter activity across the app or open a profile to see one user's history. Wrote a query builder that dynamically unioned activity tables and applied filters within each table and across the combined results.",
