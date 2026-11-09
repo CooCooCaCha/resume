@@ -129,14 +129,15 @@ const resumeData: ResumeData = {
     },
     {
       company: "Cox Communications",
-      summary: "Developed tools and prototypes for the Core Applications Team.",
+      summary:
+        "Developed tools and prototypes for TV set-top box software as part of Cox’s Core Applications team.",
       website: "https://www.cox.com",
       title: "Co-op Software Engineer",
       startYear: 2009,
       endYear: 2011,
       highlights: [
-        "Implemented a rectangle-packing algorithm in Java with the purpose of combining multiple images into a single, large image. The overhead for each HTTP request was significant so using a single image reduced load time.",
-        "Wrote a prototype TV guide application featuring a lazy-loading system. Data was loaded as-needed and significantly reduced infrastructure requirements.",
+        "Implemented a rectangle-packing algorithm in Java to combine multiple images into one, reducing HTTP requests and improving load times.",
+        "Built a TV guide prototype with lazy loading to fetch data only as needed, reducing infrastructure requirements.",
       ],
     },
   ],
