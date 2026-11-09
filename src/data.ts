@@ -81,7 +81,7 @@ const resumeData: ResumeData = {
       highlights: [
         "Rebuilt our shared React component library, removing application-specific business logic and making components more modular to simplify frontend code and improve maintainability.",
         "Built a dynamic React form system that generated multi-step forms from configuration and constraints supplied by the backend API.",
-        "Introduced modern React patterns, including function components, fragments, and hooks, through a series of team presentations and mentored other developers.",
+        "Introduced modern React patterns, including function components, fragments, and hooks, through team presentations, discussions, and mentoring.",
       ],
     },
     {
