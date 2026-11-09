@@ -44,10 +44,10 @@ const resumeData: ResumeData = {
       ],
       highlights: [
         "Led the team in rewriting our visual family tree (genogram) builder in React and refactoring the Rails backend to support more relationship types, twins, and family members’ cancer and genetic testing data.",
-        "Researched and developed a deterministic, recursive family tree layout algorithm that preserves paternal/maternal orientation and keeps twins adjacent, improving upon our Sugiyama-based algorithm.",
+        "Researched and developed a custom family tree layout algorithm that preserves paternal/maternal orientation and keeps twins adjacent, improving upon our Sugiyama-based algorithm.",
         "Built a custom query language using parser combinators, enabling product managers to display targeted content based on patient data.",
-        "Standardized an Excel format for patient data with a co-founder and built a Ruby import pipeline using pre-generated UUIDs and transactions to prevent partial patient imports and resume safely after failures. Imported 500K+ records with 100+ columns.",
-        "Led improvements to our AI-assisted development workflow by grouping apps and services in one folder and writing an AGENTS.md to give AI tools codebase context and development guidelines.",
+        "Standardized an Excel format for patient data with a co-founder and built a Ruby import pipeline using pre-generated UUIDs and transactions to prevent partial patient imports and resume safely after failures.",
+        "Contributed to our AI-assisted development practices by demonstrating how AI tools could work across apps and services using a unified workspace and an AGENTS.md with codebase context, and recommending models based on cost/performance benchmarks.",
       ],
     },
     {
@@ -66,7 +66,7 @@ const resumeData: ResumeData = {
       highlights: [
         "Rebuilt the legacy application with React Native, sharing most of the code across web, iOS, and Android.",
         "Rebuilt the API with Node.js and GraphQL, using DataLoader to avoid N+1 queries.",
-        "Proposed an engineering process, later adopted, in which temporary, cross-functional teams planned and delivered individual epics.",
+        "Introduced an engineering process in which temporary, cross-functional teams planned and delivered individual epics.",
         "Set up databases, servers, and build pipelines using AWS, Google Cloud, and CircleCI.",
         "Built an activity feed that let admins filter user activity across the app. Wrote a query builder that dynamically unioned activity tables and applied filters within each table and across the combined results.",
       ],
