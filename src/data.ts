@@ -113,17 +113,18 @@ const resumeData: ResumeData = {
       ],
     },
     {
-      company: "Nead Werx",
+      company: "MerchLogix",
       summary:
-        "In charge of researching and developing core software frameworks and coding standards as well as interviewing and training new engineers.",
-      website: "http://www.neadwerx.com/",
+        "Software architect building floor-planning and logistics applications for major retailers, while developing core frameworks and setting engineering standards.",
+      website: "https://merchlogix.com/",
       title: "Software Architect",
       startYear: 2013,
       endYear: 2015,
       highlights: [
-        "Developed an interactive visualization tool for retail stores using HTML5, CSS3, and Javascript. Think Google Maps but for retail stores.",
-        "Designed and developed a custom REST API framework in PHP.",
-        "Developed a graph-based API query system (before GraphQL existed).",
+        "Built the company’s first retail floor-planning application, with a Google Maps-style JavaScript interface for editing store layouts, updating details for individual aisle sections, and managing SKU placement. Optimized HTML5 canvas rendering for the interactive editor.",
+        "Designed and built a custom REST API framework in PHP.",
+        "Developed a graph-based API query system that let developers combine queries, apply transformations, and define outputs in a single JSON request.",
+        "Established coding standards and interviewed and trained new engineers.",
       ],
     },
     {
